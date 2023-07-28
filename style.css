@@ -1,0 +1,93 @@
+/* Reset default form styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Form container styles */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form title styles */
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Form input styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Form submit button styles */
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff9900;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #e68a00;
+}
+
+/* Invalid input styles */
+input:invalid {
+  border-color: red;
+}
+
+.invalid-feedback {
+  color: red;
+  margin-top: 5px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  /* Adjust container width for smaller screens */
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  /* Adjust font size for smaller screens */
+  h2 {
+    font-size: 20px;
+  }
+
+  /* Adjust input styles for smaller screens */
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    font-size: 14px;
+  }
+
+  /* Adjust button styles for smaller screens */
+  button[type="submit"] {
+    font-size: 14px;
+  }
+}
